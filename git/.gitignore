@@ -1,0 +1,196 @@
+# Ignorar archivos y directorios específicos de cada IDE y otros comunes.
+
+## IntelliJ IDEA ##
+.idea/
+*.iml
+*.ipr
+*.iws
+shelf/
+out/
+build/
+target/ # También común para Maven/Gradle
+
+## VSCode ##
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+## Eclipse ##
+.classpath
+.project
+.settings/
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.buildpath
+
+## Spring Tool Suite (STS) ##
+# STS es una extensión de Eclipse, por lo que hereda las reglas de Eclipse.
+# Se pueden añadir reglas específicas si fuera necesario, aunque las de Eclipse suelen ser suficientes.
+.sts4-cache/
+
+## Build tools & Dependency Management ##
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# Gradle
+.gradle/
+build/
+captures/
+output/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+package-lock.json # Opcional: algunos prefieren versionarlo
+yarn.lock # Opcional: algunos prefieren versionarlo
+pnpm-lock.yaml # Opcional: algunos prefieren versionarlo
+
+## Archivos de sistema operativo ##
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+# KDE KDevelop regenerating data files
+.kdev4/
+# QtCreater local files
+*.creator.user*
+*.creator.user.*
+
+# Windows
+Thumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+## Archivos de log y temporales ##
+*.log
+logs/
+log/
+tmp/
+temp/
+*.tmp
+*.temp
+*.patch
+*.diff
+
+## Archivos de configuración sensibles o locales ##
+# Nunca subas archivos con credenciales o configuraciones específicas de tu entorno local.
+.env
+.env.*
+!.env.example
+secrets.yml
+config.local.js
+config.local.json
+local_settings.py
+*.pem
+*.key
+credentials.*
+
+## Archivos de compilación y distribución ##
+dist/
+out/
+bin/
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.app
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+## Archivos de bases de datos locales ##
+*.sqlite
+*.db
+*.sql
+*.local.db
+# Por ejemplo, para bases de datos H2 en desarrollo
+*.mv.db
+*.trace.db
+
+## Archivos de testing y coverage ##
+coverage/
+.nyc_output/
+*.gcno
+*.gcda
+*.gcov
+junitvmwatcher*.properties
+TEST-*.xml
+target/failsafe-reports/
+target/surefire-reports/
+
+## Documentación generada ##
+# Por ejemplo, Javadoc, Sphinx, etc.
+docs/_build/
+site/
+# Doxygen
+Doxyfile.bak
+*.md.html
+
+## Otros ##
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.python-version
+# Entornos virtuales de Python
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*.backup
+.terraform.lock.hcl
+
+# JetBrains Rider
+.ideaRider/
+
+# Archivos de Sass
+.sass-cache/
+
+# Archivos de caché de compiladores
+.cache/
+
+# Archivos de editores varios
+*~
+*.swp
+*.swo
